@@ -1,18 +1,5 @@
-@font-face {
-  font-family: Nazliweb;
-  src: url('../fonts/Nazliweb.woff?v=1') format('woff');
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: Nazliweb;
-  src: url('../fonts/Nazliweb-Bold.woff?v=1') format('woff');
-  font-weight: bold;
-}
-
 body {
   color: #404040;
-  font: 112%/1.5 Nazliweb, Tahoma, Serif;
 }
 
 a small, small {
