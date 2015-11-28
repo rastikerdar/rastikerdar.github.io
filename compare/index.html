@@ -1,0 +1,235 @@
+<html>
+  <head>
+    <title>مقایسه قلم های فارسی</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    <meta name="description" content="مقایسه قلم های فارسی">   
+    <meta name="keywords" content="فونت,فارسی,مقایسه,font,farsi,Parastoo">
+    <style>
+      @font-face {
+        font-family: Parastoo;
+        src: url('Parastoo.woff') format('woff');
+      }    
+            
+      @font-face {
+        font-family: Vazir;
+        src: url('Vazir.woff') format('woff');
+      }    
+            
+      @font-face {
+        font-family: Samim;
+        src: url('Samim.woff') format('woff');
+      }    
+            
+      @font-face {
+        font-family: Shabnam;
+        src: url('Shabnam.woff') format('woff');
+      }    
+            
+      @font-face {
+        font-family: Tanha;
+        src: url('Tanha.woff') format('woff');
+      }    
+            
+      @font-face {
+        font-family: Nazli;
+        src: url('Nazli.woff') format('woff');
+      }    
+            
+      @font-face {
+        font-family: Mitra;
+        src: url('Mitra.woff') format('woff');
+      }    
+                  
+      @font-face {
+        font-family: Droid Naskh;
+        src: url('DroidNaskh.woff') format('woff');
+      }    
+            
+      @font-face {
+        font-family: Roya;
+        src: url('Roya.woff') format('woff');
+      }    
+            
+      @font-face {
+        font-family: Nazanin;
+        src: url('Nazanin.woff') format('woff');
+      }    
+            
+      @font-face {
+        font-family: Yekan;
+        src: url('Yekan.woff') format('woff');
+      }    
+
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: #007fba;
+      }
+      
+      hr {
+        border: none;
+        background-color: #ccc;
+        height: 1px;
+      }
+      
+      body {
+        color: #000;
+        direction: rtl;
+        line-height: 30px;
+        font: 15px/30px Tahoma,"DejaVu Sans",helvetica,arial,freesans,sans-serif;
+      }
+      
+      h1 {
+        font-size: 1.5em;
+      }
+      
+      header, .test-text, footer {
+        margin: auto;
+        padding: 100px 20%;
+      }
+
+      header {
+        text-align: center;
+        background-color: #eee;
+        color: #444;
+      }
+
+      header .description {
+        color: #888;
+        font-size: 12px;
+      }
+                  
+      .font-selection li {
+        display: inline-block;
+        margin: 0 10px;
+      }
+      
+      .test-text {
+        background-color: #f5f5f5;
+        color: #484848;
+      }
+      .test-text p {
+        margin-bottom: 35px;
+      }
+
+      .test-text a { color: #0b6db3; }
+
+      .mitra-font {
+        font: 20px/30px mitra;
+      }
+
+      .droid-font {
+        font: 14px/30px droid naskh;
+      }
+
+      .nazli-font {
+        font: 19px/30px nazli;
+      }
+
+      .nazanin-font {
+        font: 19px/30px nazanin;
+      }
+
+      .roya-font {
+        font: 19px/30px roya;
+      }
+
+      .yekan-font {
+        font: 13px/30px yekan;
+      }
+
+      .parastoo-font {
+        font: 16px/30px parastoo;
+      }
+
+      .samim-font {
+        font: 15px/30px samim;
+      }
+
+      .shabnam-font {
+        font: 16px/30px shabnam;
+      }
+
+      .tanha-font {
+        font: 16px/30px tanha;
+      }
+
+      .vazir-font {
+        font: 15px/30px vazir;
+      }
+
+
+      footer {
+        background-color: #454b59;
+        color: #eee;
+        text-align: center;
+        font-family: samim;
+      }
+      
+      footer a {
+        color: #D7DD77;
+      }
+
+      @media all and (max-width: 700px){
+        header, .test-text, footer {
+          padding: 30px 30px;
+        }
+      }
+    </style>
+  </head>
+  
+  <body>
+    <header>
+      <h1>مقایسه قلم های فارسی و عربی</h1>
+      <div class="description">ممکن است نمایش هر قلم با تاخیر همراه باشد</div>
+      <ul class="font-selection">
+        <li><a href="#" id="mitra" onclick="changeFont('mitra', this); return false;">میترا</a></li>
+        <li><a href="#" id="droid" onclick="changeFont('droid', this); return false;">دروید نسخ</a></li>
+        <li><a href="#" id="roya" onclick="changeFont('roya', this); return false;">رویا</a></li>
+        <li><a href="#" id="nazanin" onclick="changeFont('nazanin', this); return false;">نازنین</a></li>
+        <li><a href="#" id="nazli" onclick="changeFont('nazli', this); return false;">نازلی</a></li>
+        <li><a href="#" id="yekan" onclick="changeFont('yekan', this); return false;">یکان</a></li>
+        <hr>
+        <li><a href="#" id="vazir" onclick="changeFont('vazir', this); return false;">وزیر</a></li>
+        <li><a href="#" id="shabnam" onclick="changeFont('shabnam', this); return false;">شبنم</a></li>
+        <li><a href="#" id="samim" onclick="changeFont('samim', this); return false;">صمیم</a></li>
+        <li><a href="#" id="tanha" onclick="changeFont('tanha', this); return false;">تنها</a></li>
+        <li><a href="#" id="parastoo" onclick="changeFont('parastoo', this); return false;">پرستو</a></li>
+      </ul>
+    </header>
+
+    <section class="test-text" contenteditable="true">
+      <p>
+ این تنها یک تلاش صادقانه و ناچیز برای ساخت قلمی جدید و تازه از گونه نسخ بود. شاید برای فرد یا افرادی مفید و راهگشا باشد. به راستی دنیای فونت سرشار است از خلاقیت و زیبایی. هر تلاش شما نقشی تازه می‌نگارد از گنجینه احساس و خیال. اگر در اندیشه شما قلم پرستو واجد ارزشی می باشد و یا ظرفیتی در قلم می‌بینید پس بیایید با کمک هم (با گزارش اشکالات، پیشنهادات، تغییر و اصلاح آن) از آن، قلمی خوب و مفید بسازیم و بر تنوع و زیبایی فونت فارسی بیفزاییم. این فقط یک نمایش اولیه از قلم پرستو می‌باشد. هر حرفی، هر نویسه ای، هر چیزی قابل تغییر است. چه کلی و چه جزئی. مهم این است که شما بدانید، این قلم می تواند آن طور که شما دوست می‌دارید باشد. چه این و چه سایر قلم‌های آزاد. 
+      </p>
+    </section>
+        
+    <footer>
+      صفحه وبلاگ برای ثبت دیدگاه یا گفتگو پیرامون این صفحه:
+      <a href="http://rastikerdar.blog.ir/post/13" target="_blank">rastikerdar.blog.ir</a>
+      <br>
+      تماس: saber.rastikerdar بر روی جی‌میل
+      <br>
+      <div class="other-fonts">قلم‌های آزاد:
+        <a href="http://rastikerdar.github.io/vazir-font/" target="_blank">وزیر</a>،
+        <a href="http://rastikerdar.github.io/samim-font/" target="_blank">صمیم</a>،
+        <a href="http://rastikerdar.github.io/parastoo-font/" target="_blank">پرستو</a>،
+        <a href="http://rastikerdar.github.io/shabnam-font/" target="_blank">شبنم</a>،
+        <a href="http://rastikerdar.github.io/tanha-font/" target="_blank">تنها</a>
+      </div>
+    </footer>
+    
+    <script>
+      "use strict";
+      function changeFont(name, event) {
+        var testText = document.getElementsByClassName('test-text')[0];
+        testText.className = 'test-text ' + name + '-font';
+      }
+    </script>
+  </body>
+</html>
