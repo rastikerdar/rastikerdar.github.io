@@ -30,10 +30,15 @@
         font-family: Tanha;
         src: url('http://rastikerdar.github.io//tanha-font/Tanha.woff') format('woff');
       }    
+      
+      @font-face {
+        font-family: Gandom;
+        src: url('http://rastikerdar.github.io//gandom-font/Gandom.woff') format('woff');
+      }    
             
       @font-face {
-        font-family: Nazli;
-        src: url('Nazli.woff') format('woff');
+        font-family: Iranian Sans;
+        src: url('IranianSans.woff') format('woff');
       }    
             
       @font-face {
@@ -127,8 +132,8 @@
         font: 14px/30px droid naskh;
       }
 
-      .nazli-font {
-        font: 19px/30px nazli;
+      .iranian-font {
+        font: 16px/30px iranian sans;
       }
 
       .nazanin-font {
@@ -156,13 +161,16 @@
       }
 
       .tanha-font {
-        font: 16px/30px tanha, sans-serif;
+        font: 15px/30px tanha, sans-serif;
       }
 
       .vazir-font {
         font: 15px/30px vazir, sans-serif;
       }
 
+      .gandom-font {
+        font: 15px/30px gandom, sans-serif;
+      }
 
       footer {
         background-color: #454b59;
@@ -192,12 +200,13 @@
         <li><a href="#" id="droid" onclick="changeFont('droid', this); return false;">دروید نسخ</a></li>
         <li><a href="#" id="roya" onclick="changeFont('roya', this); return false;">رویا</a></li>
         <li><a href="#" id="nazanin" onclick="changeFont('nazanin', this); return false;">نازنین</a></li>
-        <li><a href="#" id="nazli" onclick="changeFont('nazli', this); return false;">نازلی</a></li>
+        <li><a href="#" id="nazli" onclick="changeFont('iranian', this); return false;">ایرانیان</a></li>
         <li><a href="#" id="yekan" onclick="changeFont('yekan', this); return false;">یکان</a></li>
         <hr>
         <li><a href="#" id="vazir" onclick="changeFont('vazir', this); return false;">وزیر</a></li>
         <li><a href="#" id="shabnam" onclick="changeFont('shabnam', this); return false;">شبنم</a></li>
         <li><a href="#" id="samim" onclick="changeFont('samim', this); return false;">صمیم</a></li>
+        <li><a href="#" id="gandom" onclick="changeFont('gandom', this); return false;">گندم</a></li>
         <li><a href="#" id="tanha" onclick="changeFont('tanha', this); return false;">تنها</a></li>
         <li><a href="#" id="parastoo" onclick="changeFont('parastoo', this); return false;">پرستو</a></li>
       </ul>
@@ -220,6 +229,7 @@
         <a href="http://rastikerdar.github.io/samim-font/" target="_blank">صمیم</a>،
         <a href="http://rastikerdar.github.io/parastoo-font/" target="_blank">پرستو</a>،
         <a href="http://rastikerdar.github.io/shabnam-font/" target="_blank">شبنم</a>،
+        <a href="http://rastikerdar.github.io/gandom-font/" target="_blank">گندم</a>
         <a href="http://rastikerdar.github.io/tanha-font/" target="_blank">تنها</a>
       </div>
     </footer>
