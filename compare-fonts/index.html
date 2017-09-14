@@ -13,9 +13,14 @@
             
       @font-face {
         font-family: Vazir;
-        src: url('https://cdn.rawgit.com/rastikerdar/vazir-font/v14.0.0/dist/Vazir.woff') format('woff');
+        src: url('https://cdn.rawgit.com/rastikerdar/vazir-font/v15.0.0/dist/Vazir.woff') format('woff');
       }    
-            
+
+      @font-face {
+        font-family: dirooz;
+        src: url('https://cdn.rawgit.com/rastikerdar/dirooz-font/v0.2.1/dist/Dirooz.woff') format('woff');
+      }    
+
       @font-face {
         font-family: Samim;
         src: url('https://cdn.rawgit.com/rastikerdar/samim-font/v1.0.2/dist/Samim.woff') format('woff');
@@ -100,12 +105,12 @@
       
       header, .test-text, footer {
         margin: auto;
-        padding: 100px 20%;
+        padding: 50px 10%;
       }
 
       header {
         text-align: center;
-        background-color: #eee;
+        background-color: #efeee7;
         color: #444;
       }
 
@@ -119,28 +124,42 @@
         margin: 0 10px;
       }
       
-      .test-text {
-        background-color: #f5f5f5;
-        color: #484848;
+      .test-area {
         font: 15px/30px Tahoma,"DejaVu Sans",helvetica,arial,freesans,sans-serif;
       }
       .test-text p {
         margin-bottom: 35px;
       }
 
-      .test-text a { color: #0b6db3; }
+      .test-text.light a { color: #0b6db3; }
+      .test-text.dark a { color: #A8B30B; }
+
+      .test-text.light {
+        background-color: #f5f5f5;
+        color: #484848;
+      }
+
+      .test-text.dark {
+        background-color: #484848;
+        color: #f5f5f5;
+      }
 
       .test-text h1 {
         background: #b75757 none repeat scroll 0 0;
         border-radius: 10px;
         color: #fcfefe;
         display: block;
-        font-size: 67px;
+        font-size: 3.5em;
         font-weight: normal;
-        line-height: normal;
+        line-height: 2;
         padding: 10px;
         text-align: center;
         text-shadow: 0 0 1px #000000;
+      }
+      
+      .test-text img {
+        float: left;
+        max-width: 100px;
       }
 
       .mitra-font {
@@ -187,6 +206,10 @@
         font: 15px/30px vazir, sans-serif;
       }
 
+      .dirooz-font {
+        font: 15px/30px dirooz, sans-serif;
+      }
+
       .gandom-font {
         font: 15px/30px gandom, sans-serif;
       }
@@ -196,7 +219,7 @@
       }
       
       footer {
-        background-color: #454b59;
+        background-color: #595645;
         color: #eee;
         text-align: center;
       }
@@ -204,6 +227,8 @@
       footer a {
         color: #D7DD77;
       }
+
+      .clear { clear: both; }
 
       @media all and (max-width: 700px){
         header, .test-text, footer {
@@ -232,18 +257,29 @@
         <li><a href="#" id="gandom" onclick="changeFont('gandom', this); return false;">گندم</a></li>
         <li><a href="#" id="tanha" onclick="changeFont('tanha', this); return false;">تنها</a></li>
         <li><a href="#" id="parastoo" onclick="changeFont('parastoo', this); return false;">پرستو</a></li>
+        <li><a href="#" id="dirooz" onclick="changeFont('dirooz', this); return false;">دیروز</a></li>
       </ul>
     </header>
-
-    <section class="test-text" contenteditable="true">
-      <p>
- این تنها یک تلاش صادقانه و ناچیز برای ساخت قلمی Font جدید و تازه از گونه نسخ بود. شاید برای فرد یا افرادی مفید و راهگشا باشد. اگر در اندیشه شما قلم پرستو Parastoo واجد ارزشی می باشد و یا ظرفیتی در قلم می‌بینید پس بیایید با کمک هم (با گزارش اشکالات، پیشنهادات، تغییر و اصلاح آن) از آن، قلمی خوب و مفید بسازیم و بر تنوع و زیبایی فونت فارسی Persian بیفزاییم. این فقط یک نمایش اولیه از قلم پرستو می‌باشد. هر حرفی، هر نویسه ای، هر چیزی قابل تغییر است. چه کلی و چه جزئی. مهم این است که شما بدانید، این قلم می‌تواند آن طور که شما دوست می‌دارید باشد. چه این و چه سایر قلم‌های آزاد.
-      </p>
-      <h1 class="big">
-از محبت خارها گل می‌شود
-      </h1>
+    
+    <section class="test-area">
+      <div class="test-text light" contenteditable="true">
+        <p>
+          <img src="images/Barn_Swallow.svg" />
+  این تنها یک تلاش صادقانه و ناچیز برای ساخت قلمی Font جدید و تازه از گونه نسخ بود. شاید برای فرد یا افرادی مفید و راهگشا باشد. اگر در اندیشه شما قلم پرستو Parastoo واجد ارزشی می باشد و یا ظرفیتی در قلم می‌بینید پس بیایید با کمک هم (با گزارش اشکالات، پیشنهادات، تغییر و اصلاح آن) از آن، قلمی خوب و مفید بسازیم و بر تنوع و زیبایی فونت فارسی Persian بیفزاییم. این فقط یک نمایش اولیه از قلم پرستو می‌باشد. هر حرفی، هر نویسه ای، هر چیزی قابل تغییر است. چه کلی و چه جزئی. مهم این است که شما بدانید، این قلم می‌تواند آن طور که شما دوست می‌دارید باشد. چه این و چه سایر قلم‌های آزاد.
+        </p>
+        <div class="clear"></div>
+      </div>
+      <div class="test-text dark" contenteditable="true">
+          <img src="images/Barn_Swallow.svg" />
+          <p>
+    این تنها یک تلاش صادقانه و ناچیز برای ساخت قلمی Font جدید و تازه از گونه نسخ بود. شاید برای فرد یا افرادی مفید و راهگشا باشد. اگر در اندیشه شما قلم پرستو Parastoo واجد ارزشی می باشد و یا ظرفیتی در قلم می‌بینید پس بیایید با کمک هم (با گزارش اشکالات، پیشنهادات، تغییر و اصلاح آن) از آن، قلمی خوب و مفید بسازیم و بر تنوع و زیبایی فونت فارسی Persian بیفزاییم. این فقط یک نمایش اولیه از قلم پرستو می‌باشد. هر حرفی، هر نویسه ای، هر چیزی قابل تغییر است. چه کلی و چه جزئی. مهم این است که شما بدانید، این قلم می‌تواند آن طور که شما دوست می‌دارید باشد. چه این و چه سایر قلم‌های آزاد.
+          </p>
+          <div class="clear"></div>
+      </div>
     </section>
     <footer>
+      <a href="https://commons.wikimedia.org/wiki/File:Barn_Swallow.svg" target="_blank">منبع</a> تصویر
+      <br>
       صفحه وبلاگ برای ثبت دیدگاه یا گفتگو پیرامون این صفحه:
       <a href="http://rastikerdar.blog.ir/post/13" target="_blank">rastikerdar.blog.ir</a>
       <br>
@@ -256,15 +292,16 @@
         <a href="http://rastikerdar.github.io/parastoo-font/" target="_blank">پرستو</a>،
         <a href="http://rastikerdar.github.io/shabnam-font/" target="_blank">شبنم</a>،
         <a href="http://rastikerdar.github.io/gandom-font/" target="_blank">گندم</a>،
-        <a href="http://rastikerdar.github.io/tanha-font/" target="_blank">تنها</a>
+        <a href="http://rastikerdar.github.io/tanha-font/" target="_blank">تنها</a>،
+        <a href="http://rastikerdar.github.io/dirooz-font/" target="_blank">دیروز</a>
       </div>
     </footer>
     
     <script>
       "use strict";
       function changeFont(name, event) {
-        var testText = document.getElementsByClassName('test-text')[0];
-        testText.className = 'test-text ' + name + '-font';
+        var testText = document.getElementsByClassName('test-area')[0];
+        testText.className = 'test-area ' + name + '-font';
       }
     </script>
   </body>
