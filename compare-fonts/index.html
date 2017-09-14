@@ -3,78 +3,63 @@
     <title>مقایسه قلم های فارسی</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
-    <meta name="description" content="مقایسه قلم های فارسی">   
+    <meta name="description" content="مقایسه قلم های فارسی">
     <meta name="keywords" content="فونت,فارسی,مقایسه,fonts,persian,farsi,compare">
+    <link type="text/css" rel="stylesheet" href="https://cdn.rawgit.com/rastikerdar/vazir-font/v15.0.0/dist/font-face.css">
+    <link type="text/css" rel="stylesheet" href="https://cdn.rawgit.com/rastikerdar/sahel-font/v1.0.0-alpha9/dist/font-face.css">
+    <link type="text/css" rel="stylesheet" href="https://cdn.rawgit.com/rastikerdar/shabnam-font/v1.1.0/dist/font-face.css">
+    <link type="text/css" rel="stylesheet" href="https://cdn.rawgit.com/rastikerdar/parastoo-font/v1.0.0-alpha3/dist/font-face.css">
+    <link type="text/css" rel="stylesheet" href="https://cdn.rawgit.com/rastikerdar/samim-font/v1.0.2/dist/font-face.css">
     <style>
-      @font-face {
-        font-family: Parastoo;
-        src: url('https://cdn.rawgit.com/rastikerdar/parastoo-font/v1.0.0-alpha3/dist/Parastoo.woff') format('woff');
-      }    
-            
-      @font-face {
-        font-family: Vazir;
-        src: url('https://cdn.rawgit.com/rastikerdar/vazir-font/v15.0.0/dist/Vazir.woff') format('woff');
-      }    
-
       @font-face {
         font-family: dirooz;
         src: url('https://cdn.rawgit.com/rastikerdar/dirooz-font/v0.2.1/dist/Dirooz.woff') format('woff');
-      }    
+      }
 
-      @font-face {
-        font-family: Samim;
-        src: url('https://cdn.rawgit.com/rastikerdar/samim-font/v1.0.2/dist/Samim.woff') format('woff');
-      }    
-            
       @font-face {
         font-family: Shabnam;
         src: url('https://cdn.rawgit.com/rastikerdar/shabnam-font/v1.0.2/dist/Shabnam.woff') format('woff');
-      }    
-            
+      }
+
       @font-face {
         font-family: Tanha;
         src: url('https://cdn.rawgit.com/rastikerdar/tanha-font/v0.5/dist/Tanha.woff') format('woff');
-      }    
-      
+      }
+
       @font-face {
         font-family: Gandom;
         src: url('https://cdn.rawgit.com/rastikerdar/gandom-font/v0.5.1/dist/Gandom.woff') format('woff');
-      }    
-            
-      @font-face {
-        font-family: Sahel;
-        src: url('https://cdn.rawgit.com/rastikerdar/sahel-font/v1.0.0-alpha9/dist/Sahel.woff') format('woff');
-      }    
-            
+      }
+
       @font-face {
         font-family: Iranian Sans;
         src: url('IranianSans.woff') format('woff');
-      }    
-            
+      }
+
       @font-face {
         font-family: Mitra;
         src: url('Mitra.woff') format('woff');
-      }    
-                  
+      }
+
       @font-face {
         font-family: Droid Naskh;
         src: url('DroidNaskh.woff') format('woff');
-      }    
-            
+      }
+
       @font-face {
         font-family: Roya;
         src: url('Roya.woff') format('woff');
-      }    
-            
+      }
+
       @font-face {
         font-family: Nazanin;
         src: url('Nazanin.woff') format('woff');
-      }    
-            
+      }
+
       @font-face {
         font-family: Yekan;
         src: url('Yekan.woff') format('woff');
-      }    
+      }
 
       * {
         margin: 0;
@@ -85,24 +70,25 @@
         text-decoration: none;
         color: #007fba;
       }
-      
+
       hr {
         border: none;
         background-color: #ccc;
         height: 1px;
       }
-      
+
       body {
+        background-color: #595645;
         color: #000;
         direction: rtl;
         line-height: 30px;
         font: 15px/30px vazir,"DejaVu Sans",helvetica,arial,freesans,sans-serif;
       }
-      
+
       h1 {
         font-size: 1.5em;
       }
-      
+
       header, .test-text, footer {
         margin: auto;
         padding: 50px 10%;
@@ -118,21 +104,36 @@
         color: #888;
         font-size: 12px;
       }
-                  
+
       .font-selection li {
         display: inline-block;
         margin: 0 10px;
       }
-      
+
       .test-area {
         font: 15px/30px Tahoma,"DejaVu Sans",helvetica,arial,freesans,sans-serif;
       }
       .test-text p {
         margin-bottom: 35px;
+        margin-top: 10px;
       }
 
-      .test-text.light a { color: #0b6db3; }
+      .test-area h2 {
+        font-weight: 400;
+        line-height: 1.6;
+      }
+      .test-area h3 {
+        font-weight: 400;
+        font-size: 1.05em;
+        line-height: 1.5;
+        margin-top: 5px;
+      }
+
+      .test-text.light a { color: #777777; }
       .test-text.dark a { color: #A8B30B; }
+
+      .test-text.light h3 { color: #a4a4a4; }
+      .test-text.dark h3 { color: #a4a4a4; }
 
       .test-text.light {
         background-color: #f5f5f5;
@@ -156,10 +157,20 @@
         text-align: center;
         text-shadow: 0 0 1px #000000;
       }
-      
+
       .test-text img {
-        float: left;
         max-width: 100px;
+        margin-top: 20px;
+      }
+
+      .test-text.light img {
+        float: left;
+        margin-right: 10px;
+      }
+
+      .test-text.dark img {
+        float: right;
+        margin-left: 20px;
       }
 
       .mitra-font {
@@ -217,13 +228,27 @@
       .sahel-font {
         font: 15px/30px sahel, sans-serif;
       }
-      
+
+      .sahel-font.test-area h2 { font-weight: 900; }
+      .sahel-font.test-area h3 { font-weight: 700; }
+      .vazir-font.test-area h2 { font-weight: 700; }
+      .vazir-font.test-area h3 { font-weight: 500; }
+      .parastoo-font.test-area h2,
+      .parastoo-font.test-area h3,
+      .shabnam-font.test-area h2,
+      .shabnam-font.test-area h3,
+      .samim-font.test-area h2,
+      .samim-font.test-area h3{
+        font-weight: 700;
+      }
+
+
       footer {
-        background-color: #595645;
+        background-color: #565653;
         color: #eee;
         text-align: center;
       }
-      
+
       footer a {
         color: #D7DD77;
       }
@@ -237,7 +262,7 @@
       }
     </style>
   </head>
-  
+
   <body>
     <header>
       <h1>مقایسه قلم های فارسی و عربی</h1>
@@ -260,25 +285,30 @@
         <li><a href="#" id="dirooz" onclick="changeFont('dirooz', this); return false;">دیروز</a></li>
       </ul>
     </header>
-    
+
     <section class="test-area">
       <div class="test-text light" contenteditable="true">
+        <img src="images/Barn_Swallow.svg" />
+        <h2>پرواز پرستو در آسمان</h2>
+        <h3>هجرت سالیانه پرندگان مهاجر به سرزمین دیگر</h3>
         <p>
-          <img src="images/Barn_Swallow.svg" />
-  این تنها یک تلاش صادقانه و ناچیز برای ساخت قلمی Font جدید و تازه از گونه نسخ بود. شاید برای فرد یا افرادی مفید و راهگشا باشد. اگر در اندیشه شما قلم پرستو Parastoo واجد ارزشی می باشد و یا ظرفیتی در قلم می‌بینید پس بیایید با کمک هم (با گزارش اشکالات، پیشنهادات، تغییر و اصلاح آن) از آن، قلمی خوب و مفید بسازیم و بر تنوع و زیبایی فونت فارسی Persian بیفزاییم. این فقط یک نمایش اولیه از قلم پرستو می‌باشد. هر حرفی، هر نویسه ای، هر چیزی قابل تغییر است. چه کلی و چه جزئی. مهم این است که شما بدانید، این قلم می‌تواند آن طور که شما دوست می‌دارید باشد. چه این و چه سایر قلم‌های آزاد.
+            از دیر باز تاکنون انسان می‌خواسته پی به انگیزهٔ مهاجرت پرندگان ببرد و بداند که چه عواملی در جهت‌یابی آن‌ها نقش دارد. در هرسال گروه‌های زیادی از پرندگان که به (پرندگان مهاجر) مشهورند گاهی از شمال به جنوب، وگاهی هم از جنوب به شمال مهاجرت می‌کنند، ودر این مهاجرت هزاران مایل راه را طی می‌کنند ودها هزار ده وشهر وروستا را پشت سر می‌گذارند. البته عوامل طبیعت، دما، آب وهوا، سرما و گرما در این هجرت سالیانهٔ پرندگان نقش مهمی دارد. «پرستوها» سالانه هفده هزار کیلومتر راه را می‌پیمایند، واز قاره‌ای به قارهٔ دیگر کوچ می‌کنند، و دارای رکورد سرعت در بین دیگر مهاجران هستند.
         </p>
         <div class="clear"></div>
       </div>
       <div class="test-text dark" contenteditable="true">
           <img src="images/Barn_Swallow.svg" />
+          <h2>پرواز پرستو در آسمان</h2>
+          <h3>هجرت سالیانه پرندگان مهاجر به سرزمین دیگر</h3>
           <p>
-    این تنها یک تلاش صادقانه و ناچیز برای ساخت قلمی Font جدید و تازه از گونه نسخ بود. شاید برای فرد یا افرادی مفید و راهگشا باشد. اگر در اندیشه شما قلم پرستو Parastoo واجد ارزشی می باشد و یا ظرفیتی در قلم می‌بینید پس بیایید با کمک هم (با گزارش اشکالات، پیشنهادات، تغییر و اصلاح آن) از آن، قلمی خوب و مفید بسازیم و بر تنوع و زیبایی فونت فارسی Persian بیفزاییم. این فقط یک نمایش اولیه از قلم پرستو می‌باشد. هر حرفی، هر نویسه ای، هر چیزی قابل تغییر است. چه کلی و چه جزئی. مهم این است که شما بدانید، این قلم می‌تواند آن طور که شما دوست می‌دارید باشد. چه این و چه سایر قلم‌های آزاد.
+              از دیر باز تاکنون انسان می‌خواسته پی به انگیزهٔ مهاجرت پرندگان ببرد و بداند که چه عواملی در جهت‌یابی آن‌ها نقش دارد. در هرسال گروه‌های زیادی از پرندگان که به (پرندگان مهاجر) مشهورند گاهی از شمال به جنوب، وگاهی هم از جنوب به شمال مهاجرت می‌کنند، ودر این مهاجرت هزاران مایل راه را طی می‌کنند ودها هزار ده وشهر وروستا را پشت سر می‌گذارند. البته عوامل طبیعت، دما، آب وهوا، سرما و گرما در این هجرت سالیانهٔ پرندگان نقش مهمی دارد. «پرستوها» سالانه هفده هزار کیلومتر راه را می‌پیمایند، واز قاره‌ای به قارهٔ دیگر کوچ می‌کنند، و دارای رکورد سرعت در بین دیگر مهاجران هستند.
           </p>
           <div class="clear"></div>
       </div>
     </section>
     <footer>
-      <a href="https://commons.wikimedia.org/wiki/File:Barn_Swallow.svg" target="_blank">منبع</a> تصویر
+      <a href="https://commons.wikimedia.org/wiki/File:Barn_Swallow.svg" target="_blank">منبع</a> تصویر،
+      <a href="https://fa.wikipedia.org/wiki/%D9%BE%D8%B1%D8%B3%D8%AA%D9%88" target="_blank">منبع</a> متن
       <br>
       صفحه وبلاگ برای ثبت دیدگاه یا گفتگو پیرامون این صفحه:
       <a href="http://rastikerdar.blog.ir/post/13" target="_blank">rastikerdar.blog.ir</a>
@@ -296,7 +326,7 @@
         <a href="http://rastikerdar.github.io/dirooz-font/" target="_blank">دیروز</a>
       </div>
     </footer>
-    
+
     <script>
       "use strict";
       function changeFont(name, event) {
