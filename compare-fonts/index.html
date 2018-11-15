@@ -50,6 +50,11 @@
         src: url('NotoSansArabic-Regular.woff') format('woff');
       }
 
+      html {
+        font-family: vazir,"DejaVu Sans",helvetica,arial,freesans,sans-serif;
+        font-size: 18px;
+      }
+
       * {
         margin: 0;
         padding: 0;
@@ -70,17 +75,18 @@
         background-color: #565653;
         color: #000;
         direction: rtl;
-        line-height: 30px;
-        font: 15px/30px vazir,"DejaVu Sans",helvetica,arial,freesans,sans-serif;
+        line-height: 1.8;
+
       }
 
       h1 {
         font-size: 1.5em;
+        line-height: 1.7;
       }
 
       header, .test-text, footer {
         margin: auto;
-        padding: 50px 10%;
+        padding: 30px 10%;
       }
 
       header {
@@ -91,7 +97,11 @@
 
       header .description {
         color: #888;
-        font-size: 12px;
+        font-size: 0.9rem;
+      }
+
+      .font-selection {
+        margin-top: 10px;
       }
 
       .font-selection li {
@@ -100,7 +110,8 @@
       }
 
       .test-area {
-        font: 15px/30px Tahoma,"DejaVu Sans",helvetica,arial,freesans,sans-serif;
+        /* font: 15px/30px Tahoma,"DejaVu Sans",helvetica,arial,freesans,sans-serif; */
+        line-height: 34px;
       }
       .test-text p {
         margin-bottom: 35px;
@@ -109,12 +120,12 @@
 
       .test-area h2 {
         font-weight: 400;
-        line-height: 1.6;
+        line-height: 45px;
       }
       .test-area h3 {
         font-weight: 400;
         font-size: 1.05em;
-        line-height: 1.5;
+        line-height: 40px;
         margin-top: 5px;
       }
 
@@ -154,7 +165,7 @@
 
       .test-text.light img {
         float: left;
-        margin-right: 10px;
+        margin-right: 5px;
       }
 
       .test-text.dark img {
@@ -163,63 +174,69 @@
       }
 
       .mitra-font {
-        font: 21px/30px mitra;
+        font-family: mitra;
+        font-size: 1.3rem;
       }
 
       .droid-font {
-        font: 15px/30px droid naskh;
+        font-family: droid naskh;
+        font-size: 0.95rem;
       }
 
       .iranian-font {
-        font: 16px/30px iranian sans, sans-serif;
+        font-family: iranian sans, sans-serif;
+        font-size: 1.1rem;
       }
 
       .nazanin-font {
-        font: 20px/30px nazanin;
+        font-family: nazanin;
+        font-size: 1.3rem;
       }
 
       .roya-font {
-        font: 20px/30px roya;
+        font-family: roya;
+        font-size: 1.3rem;
       }
 
       .yekan-font {
-        font: 13px/30px yekan;
+        font-family: yekan;
+        font-size: 0.89rem;
       }
 
       .noto-font {
-        font: 15px/30px Noto Sans Arabic;
+        font-family: Noto Sans Arabic;
       }
 
       .parastoo-font {
-        font: 15px/30px parastoo, serif;
+        font-family: parastoo, serif;
       }
 
       .samim-font {
-        font: 15px/30px samim, sans-serif;
+        font-family: samim, sans-serif;
       }
 
       .shabnam-font {
-        font: 15px/30px shabnam, sans-serif;
+        font-family: shabnam, sans-serif;
       }
 
       .tanha-font {
-        font: 15px/30px tanha, sans-serif;
+        font-family: tanha, sans-serif;
       }
 
       .vazir-font {
-        font: 15px/30px vazir, sans-serif;
+        font-family: vazir, sans-serif;
       }
 
       .nahid-font {
-        font: 15px/30px nahid, sans-serif;
+        font-family: nahid, sans-serif;
       }
 
       .gandom-font {
-        font: 15px/30px gandom, sans-serif;
+        font-family: gandom, sans-serif;
       }
 
       .sahel-font {
-        font: 15px/30px sahel, sans-serif;
+        font-family: sahel, sans-serif;
       }
 
       .sahel-font.test-area h2 { font-weight: 900; }
@@ -248,8 +265,22 @@
       .clear { clear: both; }
 
       @media all and (max-width: 700px){
+        html {
+          font-size: 15px;
+        }
+
+        .test-area {
+          line-height: 30px;
+        }
+
+        .test-area h2 {
+          line-height: 34px;
+        }
+        .test-area h3 {
+          line-height: 26px;
+        }
         header, .test-text, footer {
-          padding: 30px 30px;
+          padding: 30px 20px;
         }
       }
     </style>
@@ -260,12 +291,12 @@
       <h1>مقایسه قلم های فارسی و عربی</h1>
       <div class="description">ممکن است نمایش هر قلم با تاخیر همراه باشد</div>
       <ul class="font-selection">
-        <li><a href="#" id="mitra" onclick="changeFont('mitra', this); return false;">میترا</a></li>
         <li><a href="#" id="droid" onclick="changeFont('droid', this); return false;">دروید نسخ</a></li>
         <li><a href="#" id="droid" onclick="changeFont('noto', this); return false;">نوتو سنس</a></li>
         <li><a href="#" id="roya" onclick="changeFont('roya', this); return false;">رویا</a></li>
-        <li><a href="#" id="nazanin" onclick="changeFont('nazanin', this); return false;">نازنین</a></li>
         <li><a href="#" id="iranian" onclick="changeFont('iranian', this); return false;">ایرانیان</a></li>
+        <li><a href="#" id="mitra" onclick="changeFont('mitra', this); return false;">میترا</a></li>
+        <li><a href="#" id="nazanin" onclick="changeFont('nazanin', this); return false;">نازنین</a></li>
         <li><a href="#" id="yekan" onclick="changeFont('yekan', this); return false;">یکان</a></li>
         <hr>
         <li><a href="#" id="sahel" onclick="changeFont('sahel', this); return false;">ساحل</a></li>
