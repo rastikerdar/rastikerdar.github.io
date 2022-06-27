@@ -1,2 +1,2 @@
 # rastikerdar.github.io
-Small Projects
+My Projects
